@@ -1,21 +1,17 @@
 // src/components/Hero.jsx
 import { motion } from "framer-motion";
-import logo from "../assets/logo.png";  // Asegúrate de que este sea el nombre correcto
+import logo from "../assets/logo.png";
 
 export default function Hero() {
   return (
     <section
       className="
-        w-screen        /* Ocupa todo el ancho de la pantalla */
-        h-screen        /* Ocupa toda la altura de la pantalla */
-        flex
-        flex-col
-        justify-center
-        items-center
-        bg-white        /* Fondo blanco; cámbialo si quieres otro color */
+        w-screen    /* ancho total */
+        h-screen    /* altura total */
+        flex flex-col justify-center items-center
+        bg-white    /* o el fondo que uses */
       "
     >
-      {/* LOGO */}
       <motion.img
         src={logo}
         alt="Logo Nochebuena"
@@ -25,7 +21,6 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       />
 
-      {/* TÍTULO */}
       <motion.h1
         className="text-3xl md:text-5xl font-extrabold text-[#233445] mb-4"
         initial={{ opacity: 0 }}
@@ -35,7 +30,6 @@ export default function Hero() {
         El poder de la simplicidad
       </motion.h1>
 
-      {/* SUBTÍTULO */}
       <motion.p
         className="text-lg md:text-xl text-gray-700 max-w-xl"
         initial={{ opacity: 0 }}
