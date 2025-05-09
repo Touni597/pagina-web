@@ -1,20 +1,30 @@
 // src/App.jsx
 import React from "react";
-import Hero from "./components/Hero.jsx";  // asegúrate de la extensión y la ruta
-// Si usas App.css para estilos generales, impórtalo aquí:
-// import "./App.css";
+import "./index.css";
+import "./App.css";
+
+import Navbar from "./components/Navbar.jsx"; // si lo quieres
+import Hero   from "./components/Hero.jsx";
 
 export default function App() {
   return (
     <>
-      {/* Si no tienes Navbar, quítalo */}
-      {/* <Navbar /> */}
+      {/* —–––––––––––––––––––––––––––––––––––––––– */}
+      {/* CABECERA (opcional) */}
+      {/* —–––––––––––––––––––––––––––––––––––––––– */}
+      <Navbar />
 
-      {/* Hero full-width */}
+      {/* —–––––––––––––––––––––––––––––––––––––––– */}
+      {/* HERO FULL-BLEED (100vw × 100vh) */}
+      {/* —–––––––––––––––––––––––––––––––––––––––– */}
       <Hero />
 
-      {/* Si tienes más secciones, las pones aquí */}
-      {/* <Section2 /> */}
+      {/* —–––––––––––––––––––––––––––––––––––––––– */}
+      {/* EL RESTO DEL CONTENIDO EN UN CONTAINER */}
+      {/* —–––––––––––––––––––––––––––––––––––––––– */}
+      <main className="container mx-auto px-6 py-12">
+        {/* Otras secciones aquí */}
+      </main>
     </>
   );
 }
