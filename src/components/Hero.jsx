@@ -5,14 +5,7 @@ import logo from "../assets/logo.png";
 
 export default function Hero() {
   return (
-    <section
-      className="
-        w-screen        /* ancho = 100 % de la ventana */
-        h-screen        /* alto = 100 % de la ventana */
-        flex flex-col justify-center items-center
-        bg-white        /* o el fondo que desees */
-      "
-    >
+    <section className="w-screen h-screen flex flex-col justify-center items-center bg-white">
       <motion.img
         src={logo}
         alt="Logo Nochebuena"

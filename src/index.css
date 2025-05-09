@@ -3,9 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* en src/index.css, dentro del reset */
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* bloquea scroll horizontal */
+  overflow-x: hidden;
 }
